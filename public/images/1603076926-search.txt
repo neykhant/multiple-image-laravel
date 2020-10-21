@@ -1,7 +1,0 @@
- SQLSTATE[42000]: Syntax error or access violation: 1170 BLOB/TEXT column 'email' used in key specification without a key length (SQL: alter table `employees` add unique `employees_email_unique`(`email`))
-  Illuminate\Database\QueryException  : 
-
-
-api
-
-https://raw.githubusercontent.com/anajetli/android_login_registration_via_api/master/migrations/2018_09_26_163300_student_register.php

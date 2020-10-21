@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Gallery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
@@ -33,6 +34,7 @@ class HomeController extends Controller
 
             $gallery = new Gallery();
             $gallery->name = $image_name;
+            // $gallery->user_id = Auth::user()->id;
             $gallery->save();
         }
 

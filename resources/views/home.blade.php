@@ -46,8 +46,14 @@
                 <div class="card-footer">
                     <a href="{{ asset('/images/'. $gallery->name )  }}" target="_blank"  class="btn btn-info">View</a>
                     <a href="{{ route('image.download', $gallery->id ) }}" class="btn btn-success">Download</a>
-                    <a href="{{ route('image.destroy', $gallery->id ) }}" class="btn btn-danger float-right">Delete</a>
 
+                    
+                    @if($gallery->Admin == 1 )
+
+                    <a href="{{ route('image.destroy', $gallery->id ) }}" class="btn btn-danger float-right">Delete</a>
+                    @endif
+                   
+                   
                 </div>
             </div>
         </div>
