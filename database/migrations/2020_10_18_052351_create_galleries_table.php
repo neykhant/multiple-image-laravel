@@ -11,13 +11,12 @@ class CreateGalleriesTable extends Migration
      *
      * @return void
      */
+     // $table->boolean('Admin')->default(0);
     public function up()
     {
         Schema::create('galleries', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->boolean('Admin')->default(0);
-
-            // $table->integer('user_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->string('name');
             $table->timestamps();
         });

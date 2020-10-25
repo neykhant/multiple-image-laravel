@@ -50,7 +50,7 @@
 
                     <a href="{{ asset('/images/'. $gallery->name )  }}" target="_blank" class="btn btn-info">View</a>
                     <a href="{{ route('image.download', $gallery->id ) }}" class="btn btn-success">Download</a>
-                    <!-- <a href="{{ route('image.destroy', $gallery->id ) }}" class="btn btn-danger float-right">Delete</a> -->
+                    <a href="{{ route('image.destroy', $gallery->id ) }}" class="btn btn-danger float-right">Delete</a>
                 </div>
             </div>
         </div>
